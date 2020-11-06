@@ -1,0 +1,75 @@
+<html>
+    <head>
+          <!-- Compiled and minified CSS -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+          <!-- Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+         <style>
+             #formdiv
+             {
+                margin-top: 5%;
+             }
+             #submitbtn
+             {
+                 margin-top : 5%;
+                 margin-left: 20%;
+             }
+         </style>
+         
+    </head>
+    <body class = "">
+        <nav>
+            <div class="nav-wrapper teal darken-4" style = "color : #04201b; ">
+              <a href="#" class="brand-logo"><img src="logo1.png" width="65" height="65"/></a>
+              <ul id="nav-mobile" class="right teal darken-4 hide-on-med-and-down">
+                <li><a href="something.html">Profile</a></li>
+                <li><a href="About.html">About</a></li>
+              </ul>
+            </div>
+          </nav>
+
+
+  <div class="row" id="formdiv">
+    <form action="/uploadProfilePicture" 
+      enctype="multipart/form-data" method="POST"> 
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">User Name</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">code</i>
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Command</label>
+        </div>
+      </div>
+
+      <div class="file-field input-field">
+            <i class="material-icons prefix">attach_file</i>
+          <input type="file" name='mypic'>
+
+        <div class="file-path-wrapper">
+          <input class="file-path validate col s6" type="text">
+        </div>
+      </div>
+
+      <div class="row">
+        
+            <button id="submitbtn" class="btn waves-effect waves-light teal darken-4" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+            
+    </div>
+
+    </form>
+  </div>
+        
+    </body>
+</html>
